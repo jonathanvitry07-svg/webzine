@@ -3,3 +3,46 @@
     margin: 0;
     padding: 0;
 }
+
+.nav-item a:hover{
+    color: #D8DEEB;
+    background-color: #D93232;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.nav-item a:active{
+    transform:scale(1.1);
+    opacity: 0.7;
+}
+
+.nav-item a:focus{
+    outline: 2px solid #124db3;
+}
+
+.post-card footer li:last-child a{
+    border-radius: 10px;
+    background-color: #04042E;
+    color: #D8DEEB;
+    text-decoration: none;    
+}
+
+.post-card footer li:not(:last-child){
+    border: 1px solid #124db3;
+    font-size: 1em;
+} 
+
+.data-table tr:not(:first-child):hover{
+    outline: 2px solid #D8DEEB;
+    background-color: #04042E;
+}
+
+summary:hover{
+    background-color:#124db3;
+    cursor: pointer;
+}
+
+details[open] summary{
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
