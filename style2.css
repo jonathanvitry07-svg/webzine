@@ -103,5 +103,40 @@ summary::marker{
 
 tbody tr,
 summary{
-    transition: background-color 0.2s ease-in-out; color: 0.2s ease-in-out;
+    transition: background-color  0.2s ease-in-out, color 0.2s ease-in-out;
 }
+
+@media screen and (max-width: 900px){
+    #main-header{
+        padding: 1.5rem;
+    }
+    #main-content{
+        padding: 0 20px;
+    }
+    .post-card{
+        width: 47%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .nav-item{
+        display: block;
+        margin: 8px 0;
+    }
+    .post-card{
+        width: 100%;
+        margin: 15px 0;
+    }
+    h1,
+    h2{
+        font-size:2.2rem;
+    }
+    .data-table{
+        font-size: 0.85rem;
+    }
+    th,
+    td{
+        padding: 2rem 1rem;
+    }
+}
+
