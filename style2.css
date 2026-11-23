@@ -34,7 +34,7 @@
 
 .data-table tr:not(:first-child):hover{
     outline: 2px solid #D8DEEB;
-    background-color: #04042E;
+    background-color: #124db3;
 }
 
 summary:hover{
@@ -73,4 +73,35 @@ margin-top: 8px;
 
 summary::marker{
     color: #320101;
+}
+
+.nav-item a{
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.post-card{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(56, 189,248, 0.8);
+}
+
+.post-thumbnail{
+    overflow: hidden;
+}
+
+.post-thumbnail img{
+    transition: transform 0.4s ease;
+}
+
+.post-card:hover,
+.post-thumbnail img{
+    transform: scale(1.05);
+}
+
+tbody tr,
+summary{
+    transition: background-color 0.2s ease-in-out; color: 0.2s ease-in-out;
 }
