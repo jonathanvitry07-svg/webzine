@@ -46,3 +46,31 @@ details[open] summary{
     font-weight: bold;
     border-bottom: 1px solid black;
 }
+
+#hero-section p:first-of-type::first-letter{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #04042E;
+}
+
+::selection{
+    background-color: #124db3;
+    color: #D8DEEB;
+}
+
+h2::after {
+content: "";
+display: block;
+width: 60px;
+height: 3px;
+background-color: #D93232;
+margin-top: 8px;
+}
+
+.post-card footer a::after{
+    content: " →"
+}
+
+summary::marker{
+    color: #320101;
+}
