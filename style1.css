@@ -46,7 +46,7 @@ h2, h3{
 }
 
 #main-content{
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -58,7 +58,8 @@ canvas{
 
 .post-card{
     display: inline-block;
-    max-height: 100%;
+    min-height: 40rem;
+    vertical-align: top;
     width: 45%;
     margin: 1%;
     border: 1px solid #04042E;
@@ -68,10 +69,14 @@ canvas{
     padding: 15px;
 }
 
+.post-card h3{
+    line-height: 1;
+    min-height: 2.6em;   
+}
 .post-thumbnail{
     max-width: 100%;
     height: auto;
-    object-fit: cover;
+    
 }
 
 .data-table{
