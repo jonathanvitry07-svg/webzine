@@ -4,3 +4,24 @@
     padding: 0;
 }
 
+body {
+font-family: Arial, sans-serif;
+line-height: 1.5;
+background-color: #f4f6f8;
+color: #1f2933;
+}
+
+img, video, canvas {
+max-width: 100%;
+height: auto;
+}
+
+#main-content{
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 30px 20 px; 
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+}
+
