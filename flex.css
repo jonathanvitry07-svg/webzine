@@ -25,3 +25,29 @@ height: auto;
    gap: 40px;
 }
 
+#main-header{
+    background-color: #003049;
+    color: #fdf0d5;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: inherit;
+    padding: 8px 20px;
+}
+
+.nav-item a:hover{
+    background: #fdf0d5;
+}
