@@ -9,6 +9,9 @@ font-family: Arial, sans-serif;
 line-height: 1.5;
 background-color: #f4f6f8;
 color: #1f2933;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
 }
 
 img, video, canvas {
@@ -35,6 +38,10 @@ height: auto;
     flex-wrap: wrap;
     gap: 20px;
 }
+
+#main-header h1{
+    margin-right: auto;
+    }
 
 .nav-list{
     list-style: none;
@@ -227,5 +234,8 @@ td{
     #main-footer ul{
         flex-direction: column;
         text-align: center;
+    }
+    .navbar{
+        order: -1;
     }
 }
