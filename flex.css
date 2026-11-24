@@ -192,3 +192,30 @@ td{
     padding-top: 15px;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
+
+@media screen and (max-width: 768px){
+    #media-center{
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-list{
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .post-card{
+        flex-basis: 100%;
+    }
+    #media-center dl{
+        flex-direction: column;
+        gap: 5px;
+    }
+    #media-center dt{
+        flex-basis: auto;
+    }
+    #main-footer,
+    #main-footer ul{
+        flex-direction: column;
+        text-align: center;
+    }
+}
