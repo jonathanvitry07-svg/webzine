@@ -58,9 +58,8 @@ canvas{
 
 .post-card{
     display: inline-block;
-    min-height: 40rem;
-    vertical-align: top;
-    width: 45%;
+    
+    width: 48%;
     margin: 1%;
     border: 1px solid #04042E;
     background-color: white;
