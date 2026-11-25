@@ -13,7 +13,7 @@ body {
 font-family: Arial, sans-serif;
 line-height: 1.5;
 background-color: #f4f6f8;
-color: #1f2933;
+color: #d9e2ec;
 min-height: 100vh;
 display: grid;
 grid-template-rows: auto 1fr auto;
@@ -33,7 +33,7 @@ grid-template-rows: auto 1fr auto;
     color: #fdf0d5;
     padding: 20px 40px;
     display: grid;
-    -template-columns: auto auto 1fr;
+    grid-template-columns: auto auto 1fr;
     align-items: center;
     gap: 20px;
 }
@@ -162,4 +162,40 @@ td{
 #interactive-zone h2{
     grid-column: 1 / -1;
     justify-self: start;
+}
+
+#main-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "contact liens"
+    "copyright copyright";
+    padding: 30px 40px;
+    gap: 20px;
+    align-items: center;
+    background-color: #003049;
+}
+
+.contact-info{
+    grid-area: contact;
+}
+
+#main-footer ul{
+    grid-area: liens;
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    justify-self: end;
+}
+
+#main-footer a{
+    color: inherit;
+}
+
+.copyright-text{
+    grid-area: copyright;
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
