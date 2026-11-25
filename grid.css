@@ -13,7 +13,7 @@ body {
 font-family: Arial, sans-serif;
 line-height: 1.5;
 background-color: #f4f6f8;
-color: #d9e2ec;
+color: #1f2933;
 min-height: 100vh;
 display: grid;
 grid-template-rows: auto 1fr auto;
@@ -190,7 +190,11 @@ td{
 }
 
 #main-footer a{
-    color: inherit;
+    color: #f4f6f8;
+}
+
+#main-footer p{
+    color: #f4f6f8;
 }
 
 .copyright-text{
@@ -198,4 +202,45 @@ td{
     text-align: center;
     padding-top: 15px;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width: 768px){
+    #main-header{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+    .navbar{
+        justify-self: center;
+    }
+    .nav-list{
+        grid-auto-flow: row;
+        justify-items: center;
+    }
+    #hero-section{
+        grid-template-columns: 1fr;
+    }
+    .promo-video{
+        grid-column: auto;
+        grid-row: auto;
+    }
+    .latest-posts,
+    #media-center dl,
+    #interactive-zone{
+        grid-template-columns: 1fr;
+    }
+    #main-footer {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "contact"
+    "liens"
+    "copyright";
+    justify-items: center;
+    text-align: center;
+}
+#main-footer ul {
+    justify-self: center;
+    grid-auto-flow: row;
+    gap: 10px;
+}
 }
